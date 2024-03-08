@@ -22,7 +22,7 @@ public class SocialProfileForm {   // JorinForm에서 username, password 제외
     @Pattern(regexp = "^[가-힣a-zA-Z]+$", message = "이름은 한글 또는 영문만 가능합니다.")
     private String name;
 
-    @NotBlank(message = "휴대폰 번호는 필수 항목입니다.")
+    @NotBlank(message = "휴대폰 번호는 필수 입력 항목입니다.")
     @Pattern(regexp = "^\\d{10,11}$", message = "휴대폰 번호는 숫자만 10자리 또는 11자리여야 합니다.")
     private String phoneNumber;
 
